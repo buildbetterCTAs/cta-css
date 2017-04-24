@@ -1,6 +1,6 @@
 {
   "name": "responsive-cta-builder-css",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "homepage": "https://www.responsivectabuilder.com",
   "description": "Stylesheet to provide style to the Responsive CTA Builder embed code",
   "scripts": {
@@ -17,13 +17,13 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/buildBetterCTAs/styles.git"
+    "url": "git+https://github.com/buildBetterCTAs/responsive-cta-builder-css.git"
   },
   "bugs": {
-    "url": "https://github.com/buildBetterCTAs/styles/issues"
+    "url": "https://github.com/buildBetterCTAs/responsive-cta-builder-css/issues"
   },
   "author": "Responsive CTA Builder",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^6.7.7",
     "node-sass": "^4.5.2",
