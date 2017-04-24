@@ -9,6 +9,7 @@
     "build-clean": "rimraf dist",
     "build-sass": "node-sass --output-style compressed cta.sass dist/cta.css"
   },
+  "main": "dist",
   "files": [
     "cta.sass",
     "dist",
