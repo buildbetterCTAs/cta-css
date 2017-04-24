@@ -1,6 +1,6 @@
 {
   "name": "responsive-cta-builder-css",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "homepage": "https://www.responsivectabuilder.com",
   "description": "Stylesheet to provide style to the Responsive CTA Builder embed code",
   "scripts": {
@@ -9,7 +9,7 @@
     "build-clean": "rimraf dist",
     "build-sass": "node-sass --output-style compressed cta.sass dist/cta.css"
   },
-  "main": "dist",
+  "main": "dist/cta.css",
   "files": [
     "cta.sass",
     "dist",
