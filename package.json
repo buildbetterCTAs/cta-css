@@ -1,0 +1,32 @@
+{
+  "name": "responsive-cta-builder-css",
+  "version": "1.0.0",
+  "homepage": "https://www.responsivectabuilder.com",
+  "description": "Stylesheet to provide style to the Responsive CTA Builder embed code",
+  "scripts": {
+    "build": "npm run build-clean && npm run build-sass && npm run build-autoprefix",
+    "build-autoprefix": "postcss --no-map --use autoprefixer --output dist/cta.css dist/cta.css",
+    "build-clean": "rimraf dist",
+    "build-sass": "node-sass --output-style compressed cta.sass dist/cta.css"
+  },
+  "files": [
+    "cta.sass",
+    "dist",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/buildBetterCTAs/styles.git"
+  },
+  "bugs": {
+    "url": "https://github.com/buildBetterCTAs/styles/issues"
+  },
+  "author": "Responsive CTA Builder",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^6.7.7",
+    "node-sass": "^4.5.2",
+    "postcss-cli": "^3.2.0",
+    "rimraf": "^2.6.1"
+  }
+}
