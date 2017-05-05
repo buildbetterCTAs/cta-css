@@ -2,10 +2,12 @@
 
 // VARS
 
+$medium-screen: 992px
 $small-screen: 600px
 $smaller-screen: 400px
 $tiny-screen: 330px
 
+$medium-and-down: "only screen and (max-width : #{$medium-screen})" !default
 $small-and-down: "only screen and (max-width : #{$small-screen})" !default
 $smaller-and-down: "only screen and (max-width : #{$smaller-screen})" !default
 $tiny-and-down: "only screen and (max-width : #{$tiny-screen})" !default
@@ -53,11 +55,15 @@ $tiny-and-down: "only screen and (max-width : #{$tiny-screen})" !default
   display: inline-block
   font-size: 16px
   font-weight: bold
-  height: 40px
-  line-height: 40px
+  height: 36px
+  line-height: 36px
   padding: 0 16px
   text-decoration: none
   text-transform: uppercase
+  
+  @media #{$medium-and-down}
+    height: 54px
+    line-height: 54px
 
   @media #{$small-and-down}
     padding: 0
