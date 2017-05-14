@@ -1,13 +1,14 @@
 {
   "name": "responsive-cta-builder-css",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "homepage": "https://www.responsivectabuilder.com",
   "description": "Stylesheet to provide style to the Responsive CTA Builder embed code",
   "scripts": {
     "build": "npm run build-clean && npm run build-sass && npm run build-autoprefix",
     "build-autoprefix": "postcss --no-map --use autoprefixer --output dist/cta.css dist/cta.css",
     "build-clean": "rimraf dist",
-    "build-sass": "node-sass --output-style compressed cta.sass dist/cta.css"
+    "build-sass": "node-sass --output-style compressed cta.sass dist/cta.css",
+    "deploy": "npm run build && npm publish"
   },
   "main": "dist/cta.css",
   "files": [
