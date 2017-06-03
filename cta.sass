@@ -1,4 +1,4 @@
-/*! responsivectabuilder.com v1.0.8 | MIT License | github.com/buildbetterCTAs/responsive-cta-builder-css */
+/*! responsivectabuilder.com v1.0.9 | MIT License | github.com/buildbetterCTAs/responsive-cta-builder-css */
 
 // VARS
 $buttonHeight: 40px
@@ -20,6 +20,7 @@ $tinyAndDown: "only screen and (max-width : #{$tinyScreen})" !default
   background-repeat: no-repeat
   background-size: cover
   border-radius: 4px
+  box-sizing: border-box
   margin-bottom: 1rem
   margin-top: 1rem
   padding: 48px
@@ -46,7 +47,7 @@ $tinyAndDown: "only screen and (max-width : #{$tinyScreen})" !default
   @media #{$mediumAndDown}
     font-size: 36px
   @media #{$smallAndDown}
-    font-size: 30px
+    font-size: 32px
   @media #{$smallerAndDown}
     font-size: 28px
   @media #{$tinyAndDown}
@@ -87,6 +88,8 @@ $tinyAndDown: "only screen and (max-width : #{$tinyScreen})" !default
     margin-top: 8px
 
   @media #{$smallAndDown}
-    padding: 0
+    height: auto
+    line-height: 2
+    padding: 8px 0
     text-align: center
     width: 100%
