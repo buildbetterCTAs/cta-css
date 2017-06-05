@@ -1,14 +1,13 @@
 {
-  "name": "cta-css",
-  "version": "1.0.9",
+  "name": "cta.css",
+  "version": "1.0.0",
   "homepage": "https://www.responsivectabuilder.com",
-  "description": "Stylesheet to provide style to the Responsive CTA Builder embed code",
+  "description": "Styles for Responsive CTA Builder CTA embed codes.",
   "scripts": {
     "build": "npm run build-clean && npm run build-sass && npm run build-autoprefix",
     "build-autoprefix": "postcss --no-map --use autoprefixer --output dist/cta.css dist/cta.css",
     "build-clean": "rimraf dist",
-    "build-sass": "node-sass --output-style compressed cta.sass dist/cta.css",
-    "deploy": "npm run build && npm publish"
+    "build-sass": "node-sass --output-style compressed cta.sass dist/cta.css"
   },
   "main": "dist/cta.css",
   "files": [
@@ -18,13 +17,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/buildBetterCTAs/responsive-cta-builder-css.git"
+    "url": "git+https://github.com/buildBetterCTAs/cta.css.git"
   },
   "bugs": {
-    "url": "https://github.com/buildBetterCTAs/responsive-cta-builder-css/issues"
+    "url": "https://github.com/buildBetterCTAs/cta.css/issues"
   },
   "author": "Responsive CTA Builder",
-  "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^6.7.7",
     "eslint": "^3.19.0",
