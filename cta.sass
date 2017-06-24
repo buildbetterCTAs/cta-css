@@ -1,14 +1,16 @@
-/*! responsivectabuilder.com v1.0.2 | MIT License | github.com/buildbetterCTAs/cta.css */
+/*! responsivectabuilder.com v1.0.3 | MIT License | github.com/buildbetterCTAs/cta.css */
 
 // VARS
 $buttonHeight: 40px
 $buttonHeightLarge: 54px
 
+$mediumLargeScreen: 1025px
 $mediumScreen: 768px
 $smallScreen: 600px
 $smallerScreen: 425px
 $tinyScreen: 320px
 
+$mediumLargeAndDown: "only screen and (max-width : #{$mediumLargeScreen})" !default
 $mediumAndDown: "only screen and (max-width : #{$mediumScreen})" !default
 $smallAndDown: "only screen and (max-width : #{$smallScreen})" !default
 $smallerAndDown: "only screen and (max-width : #{$smallerScreen})" !default
@@ -34,6 +36,16 @@ $tinyAndDown: "only screen and (max-width : #{$tinyScreen})" !default
     padding: 24px
   @media #{$tinyAndDown}
     padding: 18px
+
+
+.ctaColumns
+  display: flex
+
+  .ctaColumn
+    display: block
+    // flex-basis: 0
+    flex-grow: 1
+    flex-shrink: 1
 
 
 .ctaHeadline
@@ -100,3 +112,11 @@ $tinyAndDown: "only screen and (max-width : #{$tinyScreen})" !default
     padding: 8px
     text-align: center
     width: 100%
+
+
+.ctaImage
+  max-width: 50%
+  padding-right: 48px
+
+  @media #{$mediumLargeAndDown}
+    display: none
