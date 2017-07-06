@@ -3,7 +3,6 @@ options:
 files:
   include:
     - '**/*.s+(a|c)ss'
-    - '**/*.vue'
 rules:
   # Extends
   extends-before-mixins: 1
@@ -47,7 +46,7 @@ rules:
   # Name Formats
   class-name-format:
     -
-    - convention: camelcase
+    - convention: strictbem
   function-name-format: 1
   id-name-format: 0
   mixin-name-format: 1

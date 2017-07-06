@@ -1,4 +1,7 @@
-/*! responsivectabuilder.com v1.0.3 | MIT License | github.com/buildbetterCTAs/cta.css */
+/*! responsivectabuilder.com v2.0.0 | github.com/buildbetterCTAs/cta.css */
+
+// CLASS NAMESPACE
+$namespace: "rcta"
 
 // VARS
 $buttonHeight: 40px
@@ -10,14 +13,14 @@ $smallScreen: 600px
 $smallerScreen: 425px
 $tinyScreen: 320px
 
-$mediumLargeAndDown: "only screen and (max-width : #{$mediumLargeScreen})" !default
-$mediumAndDown: "only screen and (max-width : #{$mediumScreen})" !default
-$smallAndDown: "only screen and (max-width : #{$smallScreen})" !default
-$smallerAndDown: "only screen and (max-width : #{$smallerScreen})" !default
-$tinyAndDown: "only screen and (max-width : #{$tinyScreen})" !default
+$mediumLargeAndDown: "only screen and (max-width: #{$mediumLargeScreen})" !default
+$mediumAndDown: "only screen and (max-width: #{$mediumScreen})" !default
+$smallAndDown: "only screen and (max-width: #{$smallScreen})" !default
+$smallerAndDown: "only screen and (max-width: #{$smallerScreen})" !default
+$tinyAndDown: "only screen and (max-width: #{$tinyScreen})" !default
 
 // STYLES
-.cta
+.#{$namespace}_embed
   background-position: center
   background-repeat: no-repeat
   background-size: cover
@@ -38,85 +41,85 @@ $tinyAndDown: "only screen and (max-width : #{$tinyScreen})" !default
     padding: 18px
 
 
-.ctaColumns
-  display: flex
+  .#{$namespace}_columns
+    display: flex
 
-  .ctaColumn
+    .#{$namespace}_column
+      display: block
+      // flex-basis: 0
+      flex-grow: 1
+      flex-shrink: 1
+
+
+  .#{$namespace}_headline
     display: block
-    // flex-basis: 0
-    flex-grow: 1
-    flex-shrink: 1
+    font-size: 40px
+    font-weight: bold
+    line-height: 1.3
+    margin-bottom: 16px
+    margin-top: 0
+
+    @media #{$mediumAndDown}
+      font-size: 36px
+    @media #{$smallAndDown}
+      font-size: 32px
+    @media #{$smallerAndDown}
+      font-size: 28px
+    @media #{$tinyAndDown}
+      font-size: 24px
 
 
-.ctaHeadline
-  display: block
-  font-size: 40px
-  font-weight: bold
-  line-height: 1.3
-  margin-bottom: 16px
-  margin-top: 0
+  .#{$namespace}_description
+    display: block
+    font-size: 20px
+    font-weight: normal
+    margin-bottom: 16px
 
-  @media #{$mediumAndDown}
-    font-size: 36px
-  @media #{$smallAndDown}
-    font-size: 32px
-  @media #{$smallerAndDown}
-    font-size: 28px
-  @media #{$tinyAndDown}
-    font-size: 24px
+    @media #{$smallerAndDown}
+      font-size: 18px
 
 
-.ctaDescription
-  display: block
-  font-size: 20px
-  font-weight: normal
-  margin-bottom: 16px
+  .#{$namespace}_button
+    border-radius: 2px
+    display: inline-block
+    font-size: 16px
+    font-weight: bold
+    height: $buttonHeight
+    letter-spacing: .5px
+    line-height: $buttonHeight
+    padding: 0 32px
+    text-decoration: none
+    text-transform: uppercase
 
-  @media #{$smallerAndDown}
-    font-size: 18px
+    &.#{$namespace}_button-hubl
+      a
+        color: inherit
 
+        &:hover
+          color: inherit !important
+          text-decoration: none
 
-.ctaButton
-  border-radius: 2px
-  display: inline-block
-  font-size: 16px
-  font-weight: bold
-  height: $buttonHeight
-  letter-spacing: .5px
-  line-height: $buttonHeight
-  padding: 0 32px
-  text-decoration: none
-  text-transform: uppercase
+      span
+        font-size: 16px
+        line-height: $buttonHeight
+        text-transform: initial
 
-  &.hubl
-    a
-      color: inherit
+    @media #{$mediumAndDown}
+      height: $buttonHeightLarge
+      line-height: $buttonHeightLarge
+      margin-top: 8px
 
-      &:hover
-        color: inherit !important
-        text-decoration: none
-
-    span
-      font-size: 16px
-      line-height: $buttonHeight
-      text-transform: initial
-
-  @media #{$mediumAndDown}
-    height: $buttonHeightLarge
-    line-height: $buttonHeightLarge
-    margin-top: 8px
-
-  @media #{$smallAndDown}
-    height: auto
-    line-height: 2
-    padding: 8px
-    text-align: center
-    width: 100%
+    @media #{$smallAndDown}
+      height: auto
+      line-height: 2
+      padding: 8px
+      text-align: center
+      width: 100%
 
 
-.ctaImage
-  max-width: 50%
-  padding-right: 48px
+  .#{$namespace}_image
+    max-width: 50%
+    padding-right: 48px
 
-  @media #{$mediumLargeAndDown}
-    display: none
+    @media #{$mediumLargeAndDown}
+      display: none
