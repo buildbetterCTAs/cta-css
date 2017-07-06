@@ -4,9 +4,9 @@
 ## Building
 
 ```bash
-# Install Dev Dependencies
-npm i
+# Install Dependencies
+yarn
 
 # Build New cta.css File
-npm run build
+yarn build
 ```
