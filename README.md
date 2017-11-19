@@ -8,7 +8,7 @@ Styles for Responsive CTA Builder CTA embed codes.
 
 ```bash
 # Install Dependencies
-npm install]
+npm install
 
 # Build New cta.css File
 npm run build
