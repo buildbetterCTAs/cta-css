@@ -8,8 +8,8 @@ Styles for Responsive CTA Builder CTA embed codes.
 
 ```bash
 # Install Dependencies
-yarn
+npm install]
 
 # Build New cta.css File
-yarn build
+npm run build
 ```
